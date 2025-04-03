@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-    const apiUrl = 'https://appaula-4.onrender.com/'; // Atualize para o URL correto da sua API
+    const apiUrl = 'https://appaula-4.onrender.com'; // Atualize para o URL correto da sua API
     const carModal = document.getElementById('carModal');
     const carForm = document.getElementById('carForm');
     const addCarBtn = document.getElementById('addCar');

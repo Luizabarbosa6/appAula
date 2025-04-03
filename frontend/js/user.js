@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Função para carregar usuários
     const loadUsers = async () => {
-        const response = await fetch(`${apiUrl}/users`);
+        const response = await fetch(`${apiUrl}users`);
         const users = await response.json();
         const tableBody = document.querySelector('#usersTable tbody');
         tableBody.innerHTML = '';

@@ -4,7 +4,7 @@
     "description": "API para gerenciamento de carros",
     "main": "server.js",
     "scripts": {
-        "start": "node server.js",
+        "start": "app.js",
         "dev": "nodemon server.js"
     },
     "author": "Luiza",

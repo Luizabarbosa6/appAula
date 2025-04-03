@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const apiUrl = 'http://localhost:3000/api'; // Atualize para sua API
+    const apiUrl = 'https://appaula-4.onrender.com/'; // Atualize para sua API
     const userModal = document.getElementById('userModal');
     const userForm = document.getElementById('userForm');
     const addUserBtn = document.getElementById('addUserBtn');

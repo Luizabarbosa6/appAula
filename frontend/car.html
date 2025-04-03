@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Carros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Usuários</a>
+        <a href="car.html".html>Carros</a>
+    </nav>
+
+    <h1>Carros Cadastrados</h1>
+    <button id="addCar">Adicionar Carros</button>
+
+    <table id="CarTable">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Marca</th>
+                <th>Ano</th>
+                <th>Placa</th>
+                <th>Responsável</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- As plantações serão listadas aqui via JS -->
+        </tbody>
+    </table>
+
+    <!-- Modal para adicionar/editar plantação -->
+    <div id="carModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitleCar">Adicionar Carros</h2>
+            <form id="carForm">
+
+                <label for="nameCar">Nome:</label>
+                <input type="text" id="nameCar" name="nameCar" required>
+
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" required>
+
+                <label for="ano">Ano:</label>
+                <input type="text" id="ano" name="ano" required>
+
+                <label for="placa">Placa:</label>
+                <input type="text" id="placa" name="placa" required>
+
+                <label for="responsible">Responsável:</label>
+                <select id="responsible" name="responsible" required></select>
+
+                <button type="submit" id="saveCar">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/car.js"></script>
+</body>
+</html>

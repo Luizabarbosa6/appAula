@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const addCar = async (car) => { 
-        await fetch(`${apiUrl}/car/`, { 
+        await fetch(`${apiUrl}/cars/`, { 
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     const updateCar = async (id, car) => { 
-        await fetch(`${apiUrl}/car/${id}`, { 
+        await fetch(`${apiUrl}/cars/${id}`, { 
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   
     const deleteCar = async (id) => { 
-        await fetch(`${apiUrl}/car/${id}`, { 
+        await fetch(`${apiUrl}/cars/${id}`, { 
             method: 'DELETE'
         });
         loadCars(); 
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modalTitleCar.innerText = 'Editar Carro'; 
 
         
-        const response = await fetch(`${apiUrl}/car/${id}`);
+        const response = await fetch(`${apiUrl}/cars/${id}`);
         if (response.status === 404) {
             console.error('Carro não encontrado');
             return;

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
    
     const loadCars = async () => { 
-        const response = await fetch(`${apiUrl}/car`); 
+        const response = await fetch(`${apiUrl}/cars`); 
         const cars = await response.json(); 
         const tableBody = document.querySelector('#CarTable tbody'); 
         tableBody.innerHTML = '';

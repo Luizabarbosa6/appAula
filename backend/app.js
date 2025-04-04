@@ -23,8 +23,8 @@ mongoose.connect(process.env.MONGO_URI, {
 });
 
 // Usando rotas
-app.use('/api/users', userRoutes);
-app.use('/api/car', carRoutes);
+app.use('/users', userRoutes);
+app.use('/cars', carRoutes);
 
 app.listen(PORT, () => {
     console.log(`Servidor rodando na porta ${PORT}`);

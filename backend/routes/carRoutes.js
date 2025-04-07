@@ -4,7 +4,7 @@ const { createCar, getAllCars, getCarById,  updateCar, deleteCar } = require('..
 
 // Rotas de carros
 router.post('/', createCar);
-router.get('/', getAllCars);  // Atualizado para usar getAllCars
+router.get('/', getAllCars);  
 router.get('/:id', getCarById);
 router.put('/:id', updateCar);
 router.delete('/:id', deleteCar);

@@ -1,7 +1,7 @@
 const Car = require('../models/car');
 
 
-// Criar nova plantação
+// Criar novo carro
 exports.createCar = async (req, res) => {
     try {
         const { nameCar, marca, ano, placa, responsible } = req.body;
@@ -16,7 +16,7 @@ exports.createCar = async (req, res) => {
 
 
 
-// Listar todas as plantações
+// Listar todas os carros
 exports.getAllCars = async (req, res) => {  // Renomeado para getAllCars (mais descritivo)
     try {
         const cars = await Car.find().populate('responsible', 'name');
@@ -38,7 +38,7 @@ exports.getCarById = async (req, res) => {
     }
 };
 
-// Atualizar plantação
+// Atualizar os carros
 exports.updateCar = async (req, res) => {
     try {
         const { id } = req.params;
@@ -53,7 +53,7 @@ exports.updateCar = async (req, res) => {
     }
 };
 
-// Excluir plantação
+// Excluir o carro
 exports.deleteCar = async (req, res) => {
     try {
         const { id } = req.params;
